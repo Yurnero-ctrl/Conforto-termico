@@ -1,3 +1,4 @@
+/*vatiaveis globais*/
 :root{
     --white-color: #ffffff;
     --primary-color: #32082a;
@@ -15,18 +16,20 @@ html{
     scroll-behavior: smooth;
 }
 
+/*fontes que vão ficar no body*/
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     line-height: 1.5;  
 }
 
-.white-fundo1{
+/*fundo roxo*/
+.fundo1{
     background: var(--primary-color);
     color: var(--white-color);
 }
 
-.fundo-floresta{
+.fundo2-content{
     display: flex;
 }
 
@@ -36,6 +39,7 @@ body{
     padding: 8rem var(--gap);
 }
 
+/*fonte para o h1*/
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
@@ -142,12 +146,98 @@ nav{
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/*nome do centro do bg*/
+.centro{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: justify;
+}
 
+.centro div h1{
+    color: #32082a;
+}
+
+/*conforto termico*/
 .conforto-content{
     max-width: 64rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     height: 100%;
+    text-align: justify;
+}
+
+/*cards*/
+
+.card-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-image: linear-gradient(180deg, #32082a, #4EE6F3);
+}
+
+.card-container .card{
+   position: relative;
+   max-width: 30rem;
+   height: 21.5rem;
+   background: #ffffff;
+   margin: 3rem 1rem;
+   padding: 2rem 1.5rem;
+   flex-direction: column;
+   box-shadow: 0 0.5rem  20.2rem rgba(0, 0, 0, 0.5);
+   transition: 0.3s ease-in-out;
+}
+
+.card-container .card:hover{
+    height: 42rem;
+}
+
+.card-container .card .imgCard{
+    position: relative;
+    width: 26rem;
+    height: 26rem;
+    top: -6rem;
+    left: 2rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card .imgCard img{
+    max-width: 100%;
+    border-radius: 0.4rem;
+}
+
+.card-container .card .card-content{
+    position: relative;
+    margin-top: -14rem;
+    padding: 1rem 1.5rem;
     text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card-container .card:hover .card-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -4rem;
+    transition-delay: 0.3s;
+}
+
+/*Formulário*/
+
+.formulario-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background: #4EE6F3;
 }
