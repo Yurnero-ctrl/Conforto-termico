@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -27,10 +28,15 @@ body{
 .fundo1{
     background: var(--primary-color);
     color: var(--white-color);
+    width: 100%;
 }
 
 .fundo2-content{
     display: flex;
+}
+
+.fundo-floresta{
+    width: 100%;
 }
 
 .main-content{
@@ -146,6 +152,14 @@ nav{
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/*@media{
+
+.centro{
+    height: ;
+}
+
+}*/
+
 /*nome do centro do bg*/
 .centro{
     position: absolute;
@@ -171,19 +185,21 @@ nav{
 /*cards*/
 
 .card-container{
-    position: relative;
+    
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     padding: 3rem;
-    background-image: linear-gradient(180deg, #32082a, #4EE6F3);
+    background-image: linear-gradient(180deg, #32082a, #feddc9);
+    height: 175vh;
 }
 
 .card-container .card{
-   position: relative;
-   max-width: 30rem;
+   
+   max-width: 35rem;
    height: 21.5rem;
    background: #ffffff;
    margin: 3rem 1rem;
@@ -239,5 +255,5 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     padding: 3rem;
-    background: #4EE6F3;
+    background: #feddc9;
 }
