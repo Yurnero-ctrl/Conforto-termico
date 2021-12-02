@@ -257,3 +257,11 @@ nav{
     padding: 3rem;
     background: #feddc9;
 }
+
+.formulario-container h1{
+    color: var(--primary-color);
+}
+
+.formulario-container h3{
+    color: var(--primary-color);
+}
